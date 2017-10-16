@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/jubong/git/etri-ksb/python/packet_flow_files/96/save_rnn_model/RNN_model.ckpt"
+all_model_checkpoint_paths: "/Users/jubong/git/etri-ksb/python/packet_flow_files/96/save_rnn_model/RNN_model.ckpt"

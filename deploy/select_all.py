@@ -1,0 +1,18 @@
+import sqlite3
+
+connection = sqlite3.connect("test.db")
+cursor = connection.cursor()
+cursor.execute("select * from packet_info;")
+a = cursor.fetchall()
+cursor.execute("select * from flow_info;")
+b = cursor.fetchall()
+cursor.execute("select * from flow_ids_info;")
+c = cursor.fetchall()
+connection.commit()
+print(len(a), a)
+print()
+print(len(b), b)
+print()
+print(len(c), c)
+cursor.close()
+connection.close()
